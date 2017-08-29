@@ -65,14 +65,17 @@ Produces a file/files such as ./models/Users.js which looks like:
           type: DataTypes.INTEGER(11),
           allowNull: false,
           primaryKey: true,
+			    comment: "",
           autoIncrement: true
         },
         username: {
           type: DataTypes.STRING,
+			    comment: "username",
           allowNull: true
         },
         touchedAt: {
           type: DataTypes.DATE,
+			    comment: "touchedAt",
           allowNull: true
         },
         aNumber: {
