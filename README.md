@@ -1,4 +1,4 @@
-# Sequelize-Auto
+# We-Sequelize-Auto
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/sequelize/sequelize-auto.svg)](https://greenkeeper.io/)
 
@@ -8,7 +8,7 @@ Automatically generate models for [SequelizeJS](https://github.com/sequelize/seq
 
 ## Install
 
-    npm install -g sequelize-auto
+    npm install -g we-sequelize-auto
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Example for MSSQL
 
 ## Usage
 
-    [node] sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dialect [dialect] -c [/path/to/config] -o [/path/to/models] -t [tableName] -C
+    [node] we-sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dialect [dialect] -c [/path/to/config] -o [/path/to/models] -t [tableName] -C
 
     Options:
       -h, --host        IP/Hostname for the database.   [required]
@@ -53,7 +53,7 @@ Example for MSSQL
 
 ## Example
 
-    sequelize-auto -o "./models" -d sequelize_auto_test -h localhost -u my_username -p 5432 -x my_password -e postgres
+    we-sequelize-auto -o "./models" -d sequelize_auto_test -h localhost -u my_username -p 5432 -x my_password -e postgres
 
 Produces a file/files such as ./models/Users.js which looks like:
 
@@ -129,7 +129,7 @@ For the `-c, --config` option the following JSON/configuration parameters are de
 ## Programmatic API
 
 ```js
-var SequelizeAuto = require('sequelize-auto')
+var SequelizeAuto = require('we-sequelize-auto')
 var auto = new SequelizeAuto('database', 'user', 'pass');
 
 auto.run(function (err) {
@@ -188,6 +188,6 @@ You must setup a database called `sequelize_auto_test` first, edit the `test/con
     # sqlite only
     npm run test-sqlite
 
-## Projects Using Sequelize-Auto
+## Projects Using We-Sequelize-Auto
 
 * [Sequelizer](https://github.com/andyforever/sequelizer)
