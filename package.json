@@ -1,6 +1,6 @@
 {
   "name": "weegg-sequelize-auto",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Automatically generate bare sequelize models from your database for egg-sequelize with typescript.",
   "main": "index",
   "keywords": [
