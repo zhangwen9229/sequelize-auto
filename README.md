@@ -11,6 +11,8 @@ Automatically generate models for [SequelizeJS](https://github.com/sequelize/seq
 
     weegg-sequelize-auto -o "./models" -d dbname -h localhost -u my_username -p 3306 -x my_password -e mysql -z
 
+### 当前本人只使用过 mysql 
+
 ## Prerequisites
 
 You will need to install the correct dialect binding globally before using sequelize-auto.
