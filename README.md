@@ -1,14 +1,15 @@
-# We-Sequelize-Auto
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/sequelize/sequelize-auto.svg)](https://greenkeeper.io/)
-
-[![Build Status](http://img.shields.io/travis/sequelize/sequelize-auto/master.svg)](https://travis-ci.org/sequelize/sequelize-auto) [![Build status](https://ci.appveyor.com/api/projects/status/bf9lb89rmpj6iveb?svg=true)](https://ci.appveyor.com/project/durango/sequelize-auto) [![Dependency Status](https://david-dm.org/sequelize/sequelize-auto.svg)](https://david-dm.org/sequelize/sequelize-auto) [![Code Climate](https://codeclimate.com/github/sequelize/sequelize-auto/badges/gpa.svg)](https://codeclimate.com/github/sequelize/sequelize-auto) [![Test Coverage](https://codeclimate.com/github/sequelize/sequelize-auto/badges/coverage.svg)](https://codeclimate.com/github/sequelize/sequelize-auto/coverage)
+# Weegg-Sequelize-Auto
 
 Automatically generate models for [SequelizeJS](https://github.com/sequelize/sequelize) via the command line.
 
 ## Install
 
-    npm install -g we-sequelize-auto
+    npm install -g weegg-sequelize-auto
+
+
+## Useage
+
+    weegg-sequelize-auto -o "./models" -d dbname -h localhost -u my_username -p 3306 -x my_password -e mysql -z
 
 ## Prerequisites
 
@@ -32,7 +33,7 @@ Example for MSSQL
 
 ## Usage
 
-    [node] we-sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dialect [dialect] -c [/path/to/config] -o [/path/to/models] -t [tableName] -C
+    [node] weegg-sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dialect [dialect] -c [/path/to/config] -o [/path/to/models] -t [tableName] -C
 
     Options:
       -h, --host        IP/Hostname for the database.   [required]
@@ -53,7 +54,7 @@ Example for MSSQL
 
 ## Example
 
-    we-sequelize-auto -o "./models" -d sequelize_auto_test -h localhost -u my_username -p 5432 -x my_password -e postgres
+    weegg-sequelize-auto -o "./models" -d sequelize_auto_test -h localhost -u my_username -p 5432 -x my_password -e mysql -z
 
 Produces a file/files such as ./models/Users.js which looks like:
 
@@ -129,7 +130,7 @@ For the `-c, --config` option the following JSON/configuration parameters are de
 ## Programmatic API
 
 ```js
-var SequelizeAuto = require('we-sequelize-auto')
+var SequelizeAuto = require('weegg-sequelize-auto')
 var auto = new SequelizeAuto('database', 'user', 'pass');
 
 auto.run(function (err) {
@@ -188,6 +189,6 @@ You must setup a database called `sequelize_auto_test` first, edit the `test/con
     # sqlite only
     npm run test-sqlite
 
-## Projects Using We-Sequelize-Auto
+## Projects Using Weegg-Sequelize-Auto
 
 * [Sequelizer](https://github.com/andyforever/sequelizer)
